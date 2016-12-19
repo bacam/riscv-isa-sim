@@ -649,7 +649,7 @@ class register_read_op_t : public operation_t
         case 1:
           {
             unsigned result = gs.dr_read(SLOT_DATA_LAST);
-            if (result) {
+            if (0) {
               gs.send_packet("E03");
               return true;
             }
@@ -729,7 +729,7 @@ class register_write_op_t : public operation_t
         case 1:
           {
             unsigned result = gs.dr_read(SLOT_DATA_LAST);
-            if (result) {
+            if (0) {
               gs.send_packet("E03");
               return true;
             }
